@@ -31,4 +31,4 @@
 2. Grading only the reply would have scored this as improved. Only the code grader on the store state shows nothing changed. This is the clearest case in the project for grading outcomes, not words.
 3. Next levers to try, one at a time: (a) a system-prompt rule to check status and name the policy rule before any irreversible tool call; (b) a runtime guardrail that refuses `issue_refund` on non-delivered orders. Option (b) works in production, but it hides the agent's own behaviour from the eval, which is why the backend deliberately doesn't enforce policy here.
 
-**State of the code:** `issue_refund` is still at v2. Revert to v1 before comparing other runs against the `hard-3x` baseline, or rerun the baseline with v2.
+**State of the code:** `issue_refund` has been reverted to v1, so the code matches the `hard-3x` baseline.

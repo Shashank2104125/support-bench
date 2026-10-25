@@ -66,10 +66,8 @@ TOOL_SPECS = [
     },
     {
         "name": "issue_refund",
-        # v2 (fix for H10): v1 was "Refund money to the customer for an order. Irreversible."
-        "description": ("Refund money for a DELIVERED order only. Never refund an order whose status is "
-                        "processing, shipped or cancelled: explain why instead, and for a processing order "
-                        "offer to cancel it (only cancel if the customer agrees). Irreversible."),
+        # v1. A stricter v2 was tried for H10 and did not change behaviour: see results/experiments.md
+        "description": "Refund money to the customer for an order. Irreversible.",
         "parameters": {"order_id": ("string", "Order id"), "amount": ("number", "Amount in USD")},
     },
     {
