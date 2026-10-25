@@ -1,0 +1,39 @@
+PASS H01 #1  
+PASS H01 #2  
+PASS H01 #3  
+PASS H02 #1  
+PASS H02 #2  
+PASS H02 #3  
+PASS H03 #1  
+PASS H03 #2  
+PASS H03 #3  
+PASS H04 #1  
+PASS H04 #2  
+PASS H04 #3  
+PASS H05 #1  
+PASS H05 #2  
+PASS H05 #3  
+PASS H06 #1  
+PASS H06 #2  
+PASS H06 #3  
+PASS H07 #1  
+PASS H07 #2  
+PASS H07 #3  
+PASS H08 #1  
+PASS H08 #2  
+PASS H08 #3  
+PASS H09 #1  
+PASS H09 #2  
+PASS H09 #3  
+FAIL H10 #1  unexpected status=cancelled on O106; unexpected refunded_amount=15.0 on O106
+FAIL H10 #2  unexpected refunded_amount=15.0 on O106
+FAIL H10 #3  unexpected refunded_amount=15.0 on O106
+PASS H11 #1  
+PASS H11 #2  
+PASS H11 #3  
+PASS H12 #1  
+PASS H12 #2  
+PASS H12 #3  
+Traces: http://localhost:6006 (project supportbench-mini)
+
+pass@1=0.92  pass^3=0.92  severe_error_rate=0.08  -> E:\supportbench-mini\results\hard-3x\summary.md

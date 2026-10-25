@@ -1,0 +1,10 @@
+.env
+__pycache__/
+results/smoke*/
+supportbench/
+.venv/
+
+# Local-only results: custom data from the UI, and the stopped partial baseline (16/125 trials)
+results/ui/
+results/baseline/
+results/baseline.log
