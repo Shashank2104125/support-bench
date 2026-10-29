@@ -27,6 +27,7 @@ task -> 5 trials -> transcript + final DB state -> graders -> metrics
 | Reply-quality judge | `graders/judge.py` | LLM-as-judge with a 3-point rubric |
 | Runner + metrics + gate | `run_evals.py` | pass@1, pass@k, pass^k, bootstrap CI, tokens, latency |
 | Judge calibration | `analysis/judge_agreement.py` | Compare judge to human labels |
+| Judge metrics | `analysis/judge_metrics.py` | Confusion matrix, agreement with 95% CI, Cohen's kappa, precision and recall on fail |
 
 **Severity ("correction vs. consequence"):** an unexpected refund or cancel is *severe*
 (irreversible: money is gone). A missing action is *minor* (the customer wasn't helped, but
