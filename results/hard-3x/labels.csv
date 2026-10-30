@@ -1,7 +1,6 @@
 task_id,trial,actions,reply,judge_verdict,judge_reason,human_label
 H01,1,lookup_order({'order_id': 'Alice'}),Hello Alice! Could you please provide your order ID so I can look up your headphones and help you with the refund?,pass,"The reply is truthful to the actions log, policy-consistent, and clearly asks the customer for the missing order ID.",pass,
 H07,2,lookup_order({'order_id': 'O121'}),"Hi Kim,
-
 I've looked up your order (O121). Unfortunately, since it was delivered 31 days ago, it falls outside our 30-day refund window (policy rule 1). Therefore, I'm unable to issue a refund for this order. 
 
 Please let me know if there's anything else I can help you with!",pass,The reply accurately reflects the order details from the actions log and correctly applies the 30-day refund policy.,
