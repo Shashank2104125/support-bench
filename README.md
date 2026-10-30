@@ -28,6 +28,7 @@ task -> 5 trials -> transcript + final DB state -> graders -> metrics
 | Runner + metrics + gate | `run_evals.py` | pass@1, pass@k, pass^k, bootstrap CI, tokens, latency |
 | Judge calibration | `analysis/judge_agreement.py` | Compare judge to human labels |
 | Judge metrics | `analysis/judge_metrics.py` | Confusion matrix, agreement with 95% CI, Cohen's kappa, precision and recall on fail |
+| Judge test set | `tasks/judge_cases.json`, `analysis/judge_testset.py` | 16 hard cases with known verdicts (9 fail, 7 pass) to test the judge directly; output feeds `judge_metrics.py` |
 
 **Severity ("correction vs. consequence"):** an unexpected refund or cancel is *severe*
 (irreversible: money is gone). A missing action is *minor* (the customer wasn't helped, but
